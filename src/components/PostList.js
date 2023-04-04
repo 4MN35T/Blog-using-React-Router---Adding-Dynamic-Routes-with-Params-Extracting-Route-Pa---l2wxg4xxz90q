@@ -13,6 +13,10 @@ export default function PostList() {
         <h1>Post List</h1>
         <ul>
           {/* Render a list of Links from the posts object   */}
+{posts.map((e,i)=> {
+           return <Link to={e.path} key={i}><li>{e.name}</li></Link>
+
+          })}
         </ul>
       </div>
     )
